@@ -1,0 +1,283 @@
+@import "vars"
+
+/*==========	Desktop First	==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	.container
+		width: 98%
+
+@media only screen and (max-width : 1176px)
+	.about__wrap
+		flex-direction: column
+	.about__right
+		margin-top: 10px
+	.arrow
+		left: 519px
+		bottom: 30px
+	.about__left
+		margin: auto
+		margin-bottom: 30px
+	.about__right
+		margin: auto
+	.prizent__item
+		margin: auto
+		margin-bottom: 20px
+	.overview__wrapp
+		max-width: 478px
+
+@media only screen and (max-width : 1008px)
+	.info__tittle
+		font-size: 26px
+		margin-bottom: 0
+
+	.info__subtitle
+		font-size: 15px
+		margin-bottom: 4px
+	.info__image
+		width: 494px
+		height: 338px
+	.info__text
+		font-size: 14px
+	.button
+		margin-left: 63%
+	.button__request
+		margin: 0
+	.overview__title
+		font-size: 14px
+	.overview__text
+		font-size: 12px
+	.overview__wrapp
+		max-width: 382px
+		padding: 14px 12px 88px 31px
+	.arrow
+		left: 45%
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	.nav
+		display: flex
+		flex-wrap: wrap
+	.nav__link
+		font-size: 14px
+	.nav__link:nth-child(5)
+		margin-right: 0
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.info__image
+		width: 288px
+		height: 259px
+		margin-top: 45px
+	.about__left-button
+		margin-left: 32%
+	.overview__left
+		background-size: 160px
+	.overview__wrapp
+		max-width: 354px
+		padding: 14px 12px 57px 31px
+	.nav__link
+		font-size: 14px
+	.nav__link:nth-child(1)
+		margin-right: 15px
+	.nav__link:nth-child(2)
+		margin-right: 15px
+	.nav__link:nth-child(3)
+		margin-right: 15px
+	.nav__link:nth-child(4)
+		margin-right: 15px
+	.about__right-left, .about__right-right
+		width: 194px
+	.arrow
+		left: 28%
+	.prizent
+		padding: 14px 0
+	.prizent__item
+		background-position: top 9px right -23px
+		background-size: 217px
+		max-width: 350px
+	.prizent__item-title
+		margin-bottom: 5px
+		font-size: 13px
+	.prizent__item-subtitle
+		font-size: 13px
+		line-height: 17px
+		max-width: 149px
+	.prizent__item-left
+		padding: 18px 0 33px 13px
+	.prizent__item-boll
+		font-size: 11px
+		top: -4px
+		left: -6px
+		width: 25px
+		height: 25px
+	.prizent__item:nth-child(2)
+		background-position: top -43px right -54px
+		background-size: 231px
+	.prizent__item:nth-child(4)
+		background-position: top 19px right -41px
+		background-size: 179px
+	.overview
+		padding-top: 31px
+	.overview__container
+		flex-direction: column
+	.overview__wrapp
+		margin: auto
+		margin-bottom: 10px
+	.request__wrap
+		padding-top: 14px
+		padding-bottom: 35px
+	.footer__link
+		padding-bottom: 0px
+	.header__logo-img
+		margin-right: 15px
+	.request__tittle
+		font-size: 17px
+	.header__container
+		flex-direction: column
+		align-items: center
+	.header__logo-img
+		margin-right: 0
+		margin-bottom: 15px
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 610px)
+	.info__image
+		width: 201px
+		height: 163px
+		margin-top: 0
+	.button
+		padding: 6px 9px
+	.info__tittle
+		font-size: 21px
+	.info__subtitle
+		font-size: 13px
+	.info__text
+		font-size: 12px
+	.info__left
+		margin-top: 0px
+	.request__tittle
+		margin-bottom: 20px
+		font-size: 19px
+	.number
+		margin-bottom: 8px	
+	.about__left-text
+		margin-bottom: 27px	
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	.container
+		width: 90%
+	.about__right::after
+		height: 70px
+	.about__right
+		max-width: 418px
+	.arrow
+		bottom: 7px
+		left: 40px
+	.about__left
+		margin-top: -6px
+		margin-bottom: 20px
+	.about__left-title
+		font-size: 19px
+		margin-bottom: 4px
+	.about__left-text
+		font-size: 11px
+		margin-bottom: 1px
+	.about__right-img
+		width: 99px
+		height: 26px
+	.about__right-left, .about__right-right
+		width: 169px
+		height: 88px
+	.about__right
+		position: relative
+		max-width: 371px
+		min-height: 352px
+	.info__container
+		flex-direction: column
+	.info__image
+		display: none
+	.button
+		margin-left: 33%
+	.about__left-button
+		margin-left: 29%
+	.button__request
+		margin-left: 0
+	.nav
+		padding: 0
+		justify-content: center
+	.nav__link
+		font-size: 12px
+	.nav__link:nth-child(1)
+		margin-right: 10px
+	.nav__link:nth-child(2)
+		margin-right: 10px
+	.nav__link:nth-child(3)
+		margin-right: 10px
+	.nav__link:nth-child(4)
+		margin-right: 10px
+	.prizent__item-subtitle
+		font-size: 11px
+		max-width: 160px
+	.prizent__item
+		max-width: 350px
+		background-position: top -27px right -23px
+	.header__container
+		padding-bottom: 0
+	.request__tittle
+		font-size: 14px
+@media only screen and (max-width : 395px)
+	.nav
+		display: none
+	.prizent__title
+		margin-bottom: 31px
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+
+	.info__container
+		flex-direction: column
+	.info__left
+		margin-bottom: 20px
+	.info__image
+		width: 299px
+		height: 209px
+	.about__right-left, .about__right-right
+		width: 124px
+		height: 56px
+	.about__right
+		max-width: 280px
+		min-height: 290px
+	.prizent__item
+		max-width: 293px
+		background-position: top -11px right -27px
+		background-size: 182px
+	.prizent__item:nth-child(2)
+		background-position: top -33px right -54px
+		background-size: 201px
+	.prizent__item:nth-child(4)
+		background-position: top 34px right -41px
+		background-size: 163px
+	.nav__link
+		margin-bottom: 10px
+
+/*==========	Mobile First	==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/

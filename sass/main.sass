@@ -1,0 +1,389 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+h1
+	margin: 0
+	padding: 0
+.button
+	background: #4285F4
+	box-shadow: 0px 8px 10px rgba(66, 133, 244, 0.25)
+	border-radius: 3px
+	font-weight: 600
+	font-size: 14px
+	line-height: 19px
+	color: #FFFFFF
+	padding: 12px 20px
+	border: none
+	cursor: pointer
+	margin-left: 75%
+	white-space: nowrap
+	transition: all 0.2s linear
+	&:hover
+		text-decoration: none
+		background-color: rgba(66, 133, 244, 0.7)
+		color: #f1f1f1
+body
+	background-color: #ffffff
+	font-family: OpenSans
+.container
+	max-width: 1180px
+	margin: 0 auto
+	padding: 0
+	width: 100%
+.header__container
+	display: flex
+	align-items: flex-end
+	padding: 40px 0
+	position: relative
+.header__logo-img
+	width: 141px
+	height: 92px
+	margin-right: 40px
+.nav
+.nav__link
+	font-size: 15px
+	line-height: 20px
+	color: #4285F4
+	&:hover
+		color: rgba(26%, 52%, 96%, 0.8)
+		text-decoration: none
+	&:nth-child(1)
+		margin-right: 45px
+	&:nth-child(2)
+		margin-right: 44px
+	&:nth-child(3)
+		margin-right: 44px
+	&:nth-child(4)
+		margin-right: 39px
+	&:nth-child(5)
+		margin-right: 40px
+
+//Berger menu 
+	.header__burgermenu
+		position: absolute
+		// top: 0
+		// right: 0
+		width: 50px
+		height: 50px
+	.burger
+		width: 50px
+		height: 50px
+		fill: #000000
+		stroke: #000000
+// Info
+.info
+	position: relative
+	margin-bottom: 32px
+
+.info__container
+	display: flex
+
+.info__left
+	margin-top: 91px
+	margin-right: 13px
+.info__tittle
+	font-weight: bold
+	font-size: 38px
+	line-height: 52px
+	color: #000000
+	margin-bottom: 20px
+.info__subtitle
+	font-size: 20px
+	line-height: 27px
+	color: #000000
+	margin-bottom: 19px
+	letter-spacing: -1px
+.info__text
+	max-width: 580px
+	font-size: 15px
+	line-height: 24px
+	color: #000000
+	margin-bottom: 21px
+.info__image
+	width: 580px
+	height: 440px
+//About 
+.about__container
+	position: relative
+.about__wrap
+	display: flex
+	justify-content: space-between
+.about__left
+	max-width: 580px
+	margin-top: 45px
+	margin-right: 10px
+	margin-bottom: 44px
+
+.about__left-title
+	font-size: 28px
+	line-height: 38px
+	color: #000000
+	margin-bottom: 20px
+.about__left-text
+	font-size: 15px
+	line-height: 24px
+	color: #000000
+	margin-bottom: 10px
+	&:nth-child(4)
+		margin-bottom: 20px
+.about__left-button
+	margin-left: 72%
+.about__right
+	position: relative
+	max-width: 580px
+	min-height: 470px
+	margin-top: 41px
+	&::after
+		content: ""
+		width: 100%
+		height: 104px
+		position: absolute
+		top: 0
+		background: linear-gradient(180deg, #FFFFFF 51.56%, rgba(255, 255, 255, 0) 100%)
+	&::before
+		content: ""
+		width: 100%
+		height: 138px
+		position: absolute
+		bottom: 0
+		background: linear-gradient(180deg, #FFFFFF 51.56%, rgba(255, 255, 255, 0) 100%)
+		transform: rotate(-180deg)
+		z-index: 2
+
+.about__right-up
+	display: flex !important
+	margin-bottom: 20px
+	&:hover
+		outline: none
+	&:active
+		outline: none
+	&:focus
+		outline: none
+.about__right-center
+	display: flex !important
+	margin-bottom: 20px
+	&:hover
+		outline: none
+	&:active
+		outline: none
+	&:focus
+		outline: none
+.about__right-down
+	display: flex !important
+	margin-bottom: 20px
+	&:hover
+		outline: none
+	&:active
+		outline: none
+	&:focus
+		outline: none
+.about__right-left,
+.about__right-right
+	display: flex
+	justify-content: center
+	align-items: center
+	width: 280px
+	height: 140px
+	background: #FFFFFF
+	border: 2px solid #F0F4FA
+	box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.05)
+	border-radius: 5px
+	outline: none
+	&:hover
+		outline: none
+	&:active
+		outline: none
+	&:focus
+		outline: none
+	&:not(:last-child)
+		margin-right: 20px
+
+.about__right-img
+	width: 160px
+	height: 32px
+.arrow
+	display: flex
+	position: absolute
+	right: 226px
+	bottom: 86px
+	z-index: 9
+.up,
+.down
+	width: 55px
+	height: 34px
+	display: flex
+	justify-content: center
+	align-items: center
+	background: #FFFFFF
+	border: 1px solid rgba(66, 133, 244, 0.25)
+	border-radius: 3px 0px 0px 3px
+	cursor: pointer
+
+// prizent
+
+.prizent
+	background: #F3F8FF
+	padding: 60px 0
+	z-index: 99
+.prizent__title
+	text-align: center
+	margin-bottom: 20px
+.prizent__item
+	position: relative
+	display: flex
+	max-width: 678px
+	justify-content: space-between
+	aline-items: center
+	background: #FFFFFF
+	border-radius: 5px
+	background-image: url(../img/prizent/1.png)
+	background-repeat: no-repeat
+	background-position: top -37px right -5px
+	background-size: 277px 282px
+	margin-bottom: 26px
+	&:nth-child(2)
+		background-image: url(../img/prizent/2.png)
+		background-position: top -57px right -54px
+		background-size: 295px 315px
+	&:nth-child(3)
+		background-image: url(../img/prizent/3.png)
+		background-position: top -18px right -50px
+	&:nth-child(4)
+		background-image: url(../img/prizent/4.png)
+		background-position: top -3px right -51px
+		background-size: 248px 270px
+.prizent__right
+	margin-left: auto
+.prizent__item-left
+	padding: 38px 0 40px 51px
+	&:nth-child(4)
+		padding: 38px 0 40px 51px
+
+.prizent__item-title
+	font-size: 20px
+	line-height: 27px
+	color: #000000
+	margin-bottom: 19px
+.prizent__item-subtitle
+	max-width: 400px
+	font-size: 15px
+	line-height: 24px
+	color: #000000
+.prizent__item-boll
+	width: 50px
+	height: 50px
+	border-radius: 50%
+	background: #4285F4
+	position: absolute
+	top: -6px
+	left: -17px
+	font-weight: bold
+	font-size: 20px
+	line-height: 27px
+	color: #ffffff
+	display: flex
+	align-items: center
+	justify-content: center
+
+// overview
+
+.overview
+	padding-top: 60px
+.overview__container
+	display: flex
+	justify-content: space-between
+.overview__wrapp
+	max-width: 582px
+	padding: 43px 56px 229px 51px
+	background: #FFFFFF
+	border: 2px solid #F0F4FA
+	box-sizing: border-box
+	box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.05)
+	border-radius: 5px
+.overview__left
+	background-image: url(../img/overview__left.png)
+	background-repeat: no-repeat
+	background-position: bottom -7px right -7px
+
+.overview__title
+	font-size: 20px
+	line-height: 27px
+	color: #000000
+	font-weight: normal
+	margin-bottom: 30px
+.overview__text
+	margin-left: 14px
+	display: inline-block
+	position: relative
+	font-size: 15px
+	line-height: 24px
+	color: #000000
+	margin-bottom: 26px
+	&::after
+		content: ""
+		width: 12px
+		height: 12px
+		background: #4285F4
+		border-radius: 50%
+		position: absolute
+		top: 6px
+		left: -15px
+
+.request__wrap
+	padding-top: 60px
+	padding-bottom: 80px
+.request__tittle
+	font-weight: normal
+	font-size: 28px
+	line-height: 38px
+	color: #000000
+	text-align: center
+	margin-bottom: 40px
+.form
+	display: flex
+	flex-direction: column
+	max-width: 280px
+	margin: auto
+.input
+	padding: 20px 0 20px 12px
+	margin-bottom: 10px
+	background: #F0F4FA
+	border-radius: 3px
+	font-size: 14px
+	line-height: 19px
+	border: none
+
+input[type="text"]
+	color: rgba(146, 146, 146, 0.5)
+input::placeholder
+	color: rgba(146, 146, 146, 0.5)
+.number
+	padding: 20px 0 109px 12px
+	margin-bottom: 20px
+.button__request
+	width: 100%
+	margin: 0
+	padding: 12px 0
+	text-align: center
+
+.footer
+	padding-bottom: 40px
+.footer__container
+	display: flex
+	justify-content: center
+.footer__link
+	font-weight: normal
+	font-size: 14px
+	line-height: 19px
+	color: #A4A4A4
+	padding-bottom: 40px
+@import "media" // Всегда в конце
